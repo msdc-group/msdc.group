@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: #f5e9d9;
-      color: #00214c;
+      background-color: #f5e9d9; /* soft beige */
+      color: #00214c;           /* brand navy */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -21,50 +21,100 @@
 
     h1 {
       font-weight: bold;
-      font-size: 1.8rem; /* default */
+      font-size: 1.8rem; /* base */
       margin: 0 0 0.75rem;
+      color: #00214c;
+      transition: color 0.3s ease, letter-spacing 0.3s ease;
     }
 
-    p {
+    /* Hover effect only for larger screens */
+    @media (min-width: 768px) {
+      h1:hover {
+        color: #00142e;        /* darker navy */
+        letter-spacing: 1px;   /* subtle expansion */
+      }
+    }
+
+    p.intro {
       font-weight: normal;
-      font-size: 1rem; /* default */
+      font-size: 1rem;  /* base */
       max-width: 600px;
       line-height: 1.5;
       margin: 0 1rem;
+
+      /* Fade-in animation */
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     footer {
-      margin-top: 1.5rem;
-      font-size: 0.85rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #00214c; /* brand navy line */
+      width: 100%;
+      text-align: center;
+      transition: border-color 0.3s ease;
     }
 
-    a {
+    footer:hover {
+      border-color: #00142e; /* darker navy on hover */
+    }
+
+    footer .contact {
+      font-size: 0.8rem;
+      font-weight: normal;
+      color: #4a4a4a;
+      margin: 0;
+    }
+
+    footer .contact a {
       color: #00214c;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer .contact a:hover {
+      color: #00142e;
       text-decoration: underline;
     }
 
-    /* Tablet and larger screens */
+    /* Responsive typography */
     @media (min-width: 768px) {
       h1 { font-size: 2.2rem; }
-      p  { font-size: 1.1rem; }
-      footer { font-size: 0.9rem; }
+      p.intro { font-size: 1.1rem; }
+      footer .contact { font-size: 0.9rem; }
     }
 
-    /* Desktop and wide screens */
     @media (min-width: 1200px) {
       h1 { font-size: 2.5rem; }
-      p  { font-size: 1.15rem; }
-      footer { font-size: 1rem; }
+      p.intro { font-size: 1.15rem; }
+      footer .contact { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
   <h1>Media Scale & Distribution Consulting Group</h1>
-  <p>
-    MSDCG empowers media companies, creators, and platforms to grow with clarity and scale. By combining audience expansion, distribution optimization, and innovative monetization, we transform emerging formats into enduring, multi-million-user businesses.
+  <p class="intro">
+    MSDCG is a boutique partner for media companies, creators, and platforms.
+    We take on only a select few clients, delivering clarity, scale, and execution.
+    From audience growth to distribution and revenue, we transform emerging formats
+    into enduring, multi-million-user businesses.
   </p>
   <footer>
-    <p>Contact, <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
+    <p class="contact">Contact: <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
   </footer>
 </body>
 </html>
