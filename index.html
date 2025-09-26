@@ -16,11 +16,46 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
+      padding: 1rem;
     }
-    h1 { font-weight: bold; font-size: 3rem; margin: 0 0 1rem; }
-    p  { font-weight: normal; font-size: 1.25rem; max-width: 700px; line-height: 1.6; margin: 0 1rem; }
-    footer { margin-top: 2rem; font-size: 0.95rem; }
-    a { color: #00214c; text-decoration: underline; }
+
+    h1 {
+      font-weight: bold;
+      font-size: 1.8rem; /* default */
+      margin: 0 0 0.75rem;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1rem; /* default */
+      max-width: 600px;
+      line-height: 1.5;
+      margin: 0 1rem;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: #00214c;
+      text-decoration: underline;
+    }
+
+    /* Tablet and larger screens */
+    @media (min-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      p  { font-size: 1.1rem; }
+      footer { font-size: 0.9rem; }
+    }
+
+    /* Desktop and wide screens */
+    @media (min-width: 1200px) {
+      h1 { font-size: 2.5rem; }
+      p  { font-size: 1.15rem; }
+      footer { font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
