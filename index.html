@@ -4,44 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MSDC Group</title>
+
+  <!-- Premium serif for headline -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
+    :root{
+      --navy:#00214c;
+      --navy-dark:#00142e;
+      --beige:#f5e9d9;
+      --muted:#4a4a4a;
+      --accent:#b89b72; /* soft gold accent */
+    }
+
+    html, body { height: 100%; }
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: #f5e9d9; /* soft beige */
-      color: #00214c;           /* brand navy */
+      background-color: var(--beige);
+      color: var(--navy);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
     }
 
-    h1 {
-      font-weight: bold;
-      font-size: 1.8rem; /* base */
-      margin: 0 0 0.75rem;
-      color: #00214c;
+    /* Container for nicer max-width on very wide screens */
+    .wrap{
+      max-width: 760px;
+      width: 100%;
+    }
+
+    h1{
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 700;
+      font-size: 2.2rem;     /* base */
+      line-height: 1.15;
+      letter-spacing: -0.5px; /* subtle refinement */
+      margin: 0 0 0.5rem 0;
+      color: var(--navy);
       transition: color 0.3s ease, letter-spacing 0.3s ease;
     }
 
-    /* Hover effect only for larger screens */
-    @media (min-width: 768px) {
-      h1:hover {
-        color: #00142e;        /* darker navy */
-        letter-spacing: 1px;   /* subtle expansion */
+    /* Underline accent below the headline */
+    h1::after{
+      content:"";
+      display:block;
+      width: 72px;
+      height: 2px;
+      background: var(--accent);
+      margin: 0.75rem auto 1.5rem;
+    }
+
+    .subtitle{
+      font-size: 0.95rem;
+      color: #666;
+      font-style: italic;
+      margin: 0 0 1.25rem 0;
+    }
+
+    /* Desktop-only hover polish for headline */
+    @media (min-width: 768px){
+      h1:hover{
+        color: var(--navy-dark);
+        letter-spacing: 0.5px;
       }
     }
 
-    p.intro {
-      font-weight: normal;
-      font-size: 1rem;  /* base */
-      max-width: 600px;
-      line-height: 1.5;
-      margin: 0 1rem;
-
+    p.intro{
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0 1rem 0;
       /* Fade-in animation */
       opacity: 0;
       transform: translateY(10px);
@@ -49,72 +85,64 @@
       animation-delay: 0.3s;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    @keyframes fadeInUp{
+      from{ opacity:0; transform: translateY(10px); }
+      to{   opacity:1; transform: translateY(0); }
     }
 
-    footer {
+    footer{
       margin-top: 2rem;
       padding-top: 1rem;
-      border-top: 1px solid #00214c; /* brand navy line */
+      border-top: 1px solid var(--navy);
       width: 100%;
       text-align: center;
       transition: border-color 0.3s ease;
     }
+    footer:hover{ border-color: var(--navy-dark); }
 
-    footer:hover {
-      border-color: #00142e; /* darker navy on hover */
-    }
-
-    footer .contact {
-      font-size: 0.8rem;
-      font-weight: normal;
-      color: #4a4a4a;
+    footer .contact{
+      font-size: 0.85rem;
+      color: var(--muted);
       margin: 0;
     }
-
-    footer .contact a {
-      color: #00214c;
+    footer .contact a{
+      color: var(--navy);
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
-    footer .contact a:hover {
-      color: #00142e;
+    footer .contact a:hover{
+      color: var(--navy-dark);
       text-decoration: underline;
     }
 
-    /* Responsive typography */
-    @media (min-width: 768px) {
-      h1 { font-size: 2.2rem; }
-      p.intro { font-size: 1.1rem; }
-      footer .contact { font-size: 0.9rem; }
+    /* Responsive type scaling */
+    @media (min-width: 768px){
+      h1{ font-size: 2.6rem; }
+      p.intro{ font-size: 1.12rem; }
+      footer .contact{ font-size: 0.9rem; }
     }
-
-    @media (min-width: 1200px) {
-      h1 { font-size: 2.5rem; }
-      p.intro { font-size: 1.15rem; }
-      footer .contact { font-size: 1rem; }
+    @media (min-width: 1200px){
+      h1{ font-size: 3rem; }
+      p.intro{ font-size: 1.15rem; }
+      footer .contact{ font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-  <h1>Media Scale & Distribution Consulting Group</h1>
-  <p class="intro">
-    MSDCG is a boutique partner for media companies, creators, and platforms.
-    We take on only a select few clients, delivering clarity, scale, and execution.
-    From audience growth to distribution and revenue, we transform emerging formats
-    into enduring, multi-million-user businesses.
-  </p>
-  <footer>
-    <p class="contact">Contact: <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
-  </footer>
+  <div class="wrap">
+    <h1>Media Scale & Distribution Consulting Group</h1>
+    <p class="subtitle">Boutique advisory for audience growth, distribution, and revenue</p>
+
+    <p class="intro">
+      MSDCG is a boutique partner for media companies, creators, and platforms.
+      We take on only a select few clients, delivering clarity, scale, and execution.
+      From audience growth to distribution and revenue, we transform emerging formats
+      into enduring, multi-million-user businesses.
+    </p>
+
+    <footer>
+      <p class="contact">Contact: <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
+    </footer>
+  </div>
 </body>
 </html>
