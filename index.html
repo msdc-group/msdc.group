@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MSDC Group</title>
 
-  <!-- Premium serif for headline -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
   <style>
     :root{
       --navy:#00214c;
       --navy-dark:#00142e;
       --beige:#f5e9d9;
       --muted:#4a4a4a;
-      --accent:#b89b72; /* soft gold accent */
     }
 
     html, body { height: 100%; }
@@ -32,38 +28,20 @@
       padding: 2rem;
     }
 
-    /* Container for nicer max-width on very wide screens */
     .wrap{
       max-width: 760px;
       width: 100%;
     }
 
     h1{
-      font-family: "Playfair Display", Georgia, serif;
-      font-weight: 700;
-      font-size: 2.2rem;     /* base */
-      line-height: 1.15;
-      letter-spacing: -0.5px; /* subtle refinement */
-      margin: 0 0 0.5rem 0;
+      font-family: Georgia, serif;
+      font-weight: bold;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      letter-spacing: -0.25px;
+      margin: 0 0 1.5rem 0;
       color: var(--navy);
       transition: color 0.3s ease, letter-spacing 0.3s ease;
-    }
-
-    /* Underline accent below the headline */
-    h1::after{
-      content:"";
-      display:block;
-      width: 72px;
-      height: 2px;
-      background: var(--accent);
-      margin: 0.75rem auto 1.5rem;
-    }
-
-    .subtitle{
-      font-size: 0.95rem;
-      color: #666;
-      font-style: italic;
-      margin: 0 0 1.25rem 0;
     }
 
     /* Desktop-only hover polish for headline */
@@ -77,8 +55,7 @@
     p.intro{
       font-size: 1.05rem;
       line-height: 1.6;
-      margin: 0 1rem 0;
-      /* Fade-in animation */
+      margin: 0 1rem;
       opacity: 0;
       transform: translateY(10px);
       animation: fadeInUp 1s ease forwards;
@@ -115,7 +92,6 @@
       text-decoration: underline;
     }
 
-    /* Responsive type scaling */
     @media (min-width: 768px){
       h1{ font-size: 2.6rem; }
       p.intro{ font-size: 1.12rem; }
@@ -131,7 +107,6 @@
 <body>
   <div class="wrap">
     <h1>Media Scale & Distribution Consulting Group</h1>
-    <p class="subtitle">Boutique advisory for audience growth, distribution, and revenue</p>
 
     <p class="intro">
       MSDCG is a boutique partner for media companies, creators, and platforms.
