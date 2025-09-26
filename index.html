@@ -8,12 +8,10 @@
   <style>
     :root{
       --navy:#00214c;
-      --navy-dark:#00142e;
       --beige:#f5e9d9;
       --muted:#4a4a4a;
     }
 
-    html, body { height: 100%; }
     body {
       margin: 0;
       font-family: Georgia, serif;
@@ -25,82 +23,59 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
     }
 
-    .wrap{
-      max-width: 760px;
+    .wrap {
+      max-width: 640px;
       width: 100%;
     }
 
-    h1{
+    h1 {
       font-family: Georgia, serif;
       font-weight: bold;
-      font-size: 2.2rem;
+      font-size: 1.6rem; /* smaller headline */
       line-height: 1.2;
-      letter-spacing: -0.25px;
-      margin: 0 0 1.5rem 0;
+      margin: 0 0 1rem 0;
       color: var(--navy);
-      transition: color 0.3s ease, letter-spacing 0.3s ease;
     }
 
-    /* Desktop-only hover polish for headline */
-    @media (min-width: 768px){
-      h1:hover{
-        color: var(--navy-dark);
-        letter-spacing: 0.5px;
-      }
-    }
-
-    p.intro{
-      font-size: 1.05rem;
-      line-height: 1.6;
-      margin: 0 1rem;
+    p.intro {
+      font-size: 0.9rem; /* smaller body */
+      line-height: 1.45;
+      margin: 0 0.5rem;
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(8px);
       animation: fadeInUp 1s ease forwards;
-      animation-delay: 0.3s;
+      animation-delay: 0.2s;
     }
 
-    @keyframes fadeInUp{
-      from{ opacity:0; transform: translateY(10px); }
-      to{   opacity:1; transform: translateY(0); }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
-    footer{
-      margin-top: 2rem;
-      padding-top: 1rem;
+    footer {
+      margin-top: 1.5rem;
+      padding-top: 0.75rem;
       border-top: 1px solid var(--navy);
       width: 100%;
       text-align: center;
-      transition: border-color 0.3s ease;
     }
-    footer:hover{ border-color: var(--navy-dark); }
 
-    footer .contact{
-      font-size: 0.85rem;
+    footer .contact {
+      font-size: 0.75rem; /* smaller footer */
       color: var(--muted);
       margin: 0;
     }
-    footer .contact a{
+
+    footer .contact a {
       color: var(--navy);
       text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    footer .contact a:hover{
-      color: var(--navy-dark);
-      text-decoration: underline;
     }
 
-    @media (min-width: 768px){
-      h1{ font-size: 2.6rem; }
-      p.intro{ font-size: 1.12rem; }
-      footer .contact{ font-size: 0.9rem; }
-    }
-    @media (min-width: 1200px){
-      h1{ font-size: 3rem; }
-      p.intro{ font-size: 1.15rem; }
-      footer .contact{ font-size: 1rem; }
+    footer .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
