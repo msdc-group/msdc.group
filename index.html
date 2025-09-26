@@ -7,16 +7,17 @@
 
   <style>
     :root{
-      --navy:#00214c;
-      --beige:#f5e9d9;
-      --muted:#4a4a4a;
+      --bluegray:#243447;   /* refined deep blue-gray */
+      --ivory:#fcfbf9;      /* lighter background */
+      --muted:#4a4a4a;      /* soft gray for footer text */
+      --gold:#b89b72;       /* muted gold accent */
     }
 
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: var(--beige);
-      color: var(--navy);
+      background-color: var(--ivory);
+      color: var(--bluegray);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -34,14 +35,14 @@
     h1 {
       font-family: Georgia, serif;
       font-weight: bold;
-      font-size: 1.6rem; /* smaller headline */
+      font-size: 1.6rem;
       line-height: 1.2;
       margin: 0 0 1rem 0;
-      color: var(--navy);
+      color: var(--bluegray);
     }
 
     p.intro {
-      font-size: 0.9rem; /* smaller body */
+      font-size: 0.9rem;
       line-height: 1.45;
       margin: 0 0.5rem;
       opacity: 0;
@@ -58,24 +59,25 @@
     footer {
       margin-top: 1.5rem;
       padding-top: 0.75rem;
-      border-top: 1px solid var(--navy);
+      border-top: 1px solid var(--gold); /* gold accent line */
       width: 100%;
       text-align: center;
     }
 
     footer .contact {
-      font-size: 0.75rem; /* smaller footer */
+      font-size: 0.75rem;
       color: var(--muted);
       margin: 0;
     }
 
     footer .contact a {
-      color: var(--navy);
+      color: var(--bluegray);
       text-decoration: none;
     }
 
     footer .contact a:hover {
-      text-decoration: underline;
+      color: var(--gold); /* gold hover for elegance */
+      text-decoration: none;
     }
   </style>
 </head>
@@ -84,10 +86,10 @@
     <h1>Media Scale & Distribution Consulting Group</h1>
 
     <p class="intro">
-      MSDCG is a partner for media companies, creators, and platforms.
+      MSDCG is a boutique partner for media companies, creators, and platforms.
+      We take on only a select few clients, delivering clarity, scale, and execution.
       From audience growth to distribution and revenue, we transform emerging formats
       into enduring, multi-million-user businesses.
-         We take on only a select few clients, delivering clarity, scale, and execution.
     </p>
 
     <footer>
