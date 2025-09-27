@@ -1,91 +1,103 @@
+:root{
+  --ink:#243447;
+  --paper:#fcfbf9;
+  --gold:#b89b72;
+  --maxw:660px;
+}
+
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Georgia, serif;
+  font-size:.85rem;
+  line-height:1.35;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:20px;
+}
+
+.wrap{max-width:var(--maxw); width:100%}
+
+h1{
+  text-align:center;
+  font-size:1.12rem;
+  font-weight:bold;
+  margin:0 0 .6rem 0;
+}
+
+.content{text-align:left}
+
+h2{
+  font-size:.86rem;
+  font-weight:bold;
+  margin:.9rem 0 .35rem;
+}
+h3{
+  font-size:.8rem;
+  font-weight:bold;
+  margin:.55rem 0 .2rem;
+}
+p{margin:.32rem 0}
+
+a{
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--gold);
+  padding-bottom:1px;
+}
+a:hover{opacity:.85}
+.nav-link{
+  display:inline-block;
+  margin-top:.8rem;
+  font-size:.78rem;
+  border-bottom:1px solid var(--gold);
+  padding-bottom:1px;
+}
+
+.rule{
+  margin:1rem auto .7rem;
+  width:92%;
+  border-top:1px solid var(--gold);
+}
+footer{text-align:center}
+footer p{margin:0; font-size:.72rem}
+footer a{border-bottom:1px solid var(--gold); padding-bottom:1px}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MSDC Group</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background-color: #fcfbf9;
-      color: #243447;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-weight: bold;
-      font-size: 1.75rem;
-      margin: 0 0 1rem;
-    }
-    p {
-      font-weight: normal;
-      font-size: 1rem;
-      max-width: 750px;
-      line-height: 1.6;
-      margin: 0.5rem 1rem;
-    }
-    h2 {
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #243447;
-      text-decoration: underline;
-    }
-    .divider {
-      border-top: 1px solid #d4af37;
-      width: 90%;
-      margin: 2rem 0 1rem;
-    }
-    .nav-link {
-      font-size: 0.95rem;
-      font-weight: normal;
-      color: #243447;
-      text-decoration: underline;
-      display: inline-block;
-      margin-top: 2rem;
-    }
-    .nav-link:hover {
-      color: #000;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Media Scale & Distribution Consulting Group</h1>
-  <p>
-    MSDCG scales media businesses through proven growth and distribution strategies refined at the companies driving today’s creator economy.
-  </p>
+  <div class="wrap">
+    <h1>Media Scale & Distribution Consulting Group</h1>
 
-  <h2>We deliver</h2>
-  <p><strong>Audience acquisition</strong> strategies that grow businesses from thousands to millions of users across platforms.</p>
-  <p><strong>Distribution optimization</strong> that maximizes reach through YouTube, Spotify, Apple, and emerging channels.</p>
-  <p><strong>Revenue diversification</strong> across advertising, subscriptions, and creator monetization to build sustainable businesses.</p>
-  <p><strong>Enterprise partnerships and business development</strong> that accelerate growth through strategic deal closure.</p>
+    <div class="content">
+      <p>MSDCG scales media businesses through proven growth and distribution strategies refined at the companies driving today’s creator economy.</p>
 
-  <h2>How we work</h2>
-  <p>
-    MSDCG accepts only 2–3 strategic engagements annually, exclusively through referral. Clients receive hands-on execution backed by strategies developed at Amazon, Chartable (acquired by Spotify), and Wondery (acquired by Amazon Music).
-  </p>
+      <h2>We deliver</h2>
+      <p><strong>Audience acquisition</strong> strategies that grow businesses from thousands to millions of users across platforms.</p>
+      <p><strong>Distribution optimization</strong> that maximizes reach through YouTube, Spotify, Apple, and emerging channels.</p>
+      <p><strong>Revenue diversification</strong> across advertising, subscriptions, and creator monetization to build sustainable businesses.</p>
+      <p><strong>Enterprise partnerships and business development</strong> that accelerate growth through strategic deal closure.</p>
 
-  <h2>Principal</h2>
-  <p>
-    Karo Chakhlasyan, former Amazon Senior Product Manager for Wondery, Chartable COO, and Wondery VP of Audience Acquisition.
-  </p>
+      <h2>How we work</h2>
+      <p>MSDCG accepts only 2–3 strategic engagements annually, exclusively through referral. Clients receive hands-on execution backed by strategies developed at Amazon, Chartable (acquired by Spotify), and Wondery (acquired by Amazon Music).</p>
 
-  <a href="focus.html" class="nav-link">Focus & Method →</a>
+      <h2>Principal</h2>
+      <p>Karo Chakhlasyan, former Amazon Senior Product Manager for Wondery, Chartable COO, and Wondery VP of Audience Acquisition.</p>
 
-  <div class="divider"></div>
-  <footer>
-    <p>Contact, <a href="mailto:info@msdc.group">info@msdc.group</a></p>
-  </footer>
+      <a href="focus.html" class="nav-link">Focus & Method →</a>
+    </div>
+
+    <div class="rule"></div>
+    <footer><p>Contact, <a href="mailto:info@msdc.group">info@msdc.group</a></p></footer>
+  </div>
 </body>
 </html>
