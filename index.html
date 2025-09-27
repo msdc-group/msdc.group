@@ -6,83 +6,93 @@
   <title>MSDC Group</title>
   <meta name="description" content="MSDCG scales media businesses through proven growth and distribution strategies refined at the companies driving today’s creator economy." />
   <style>
-    :root {
+    :root{
       --ink:#243447;      /* blue-gray */
       --paper:#fcfbf9;    /* ivory */
       --gold:#b89b72;     /* muted gold */
       --muted:#666666;    /* soft gray */
     }
-    body {
+
+    /* Typography lock */
+    html, body { height: 100%; }
+    body{
       margin:0;
-      font-family: Georgia, serif;
       background:var(--paper);
       color:var(--ink);
+      font-family: Georgia, serif;
+      font-size: 0.9rem;        /* small, boutique */
+      line-height: 1.4;
       display:flex;
       align-items:center;
       justify-content:center;
-      min-height:100vh;
       text-align:center;
-      padding:20px;
+      padding:24px;
     }
-    .wrap { max-width:640px; }
-    h1 {
-      font-size:1.2rem; /* small, understated */
-      font-weight:bold;
-      margin:0 0 .6rem 0;
+
+    .wrap{ max-width: 680px; width:100%; }
+
+    /* Normalize headings to the same family and restrained sizes */
+    h1, h2, h3, p, li, footer { font-family: inherit; font-weight: normal; margin: 0.6rem 0; }
+
+    h1{
+      font-size: 1.2rem;        /* understated headline */
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
     }
-    p.lead {
-      font-size:.85rem;
-      line-height:1.4;
-      margin:0 0 1rem 0;
+
+    p.lead{
+      font-size: 0.85rem;
+      margin: 0.5rem 0 0.8rem 0;
     }
-    ul {
-      list-style:none;
-      padding:0;
-      margin:1.5rem 0;
+
+    h2{
+      font-size: 0.85rem;       /* same family, just bold for hierarchy */
+      font-weight: bold;
+      margin: 0.9rem 0 0.35rem 0;
     }
-    li {
-      font-size:.8rem;
-      margin-bottom:.7rem;
-      line-height:1.4;
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0.6rem 0 0.8rem 0;
     }
-    h2 {
-      font-size:.9rem;
-      margin:1.2rem 0 .4rem 0;
-      font-weight:bold;
+
+    li{
+      font-size: 0.82rem;
+      line-height: 1.35;
+      margin: 0.35rem 0;
     }
-    .cta {
-      margin-top:1rem;
+
+    strong{ font-weight: bold; }
+
+    /* Quiet link styling */
+    a{
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 1px;
     }
-    .cta a {
-      font-size:.75rem;
-      color:var(--ink);
-      text-decoration:none;
-      border-bottom:1px solid var(--gold);
-      padding-bottom:1px;
+    a:hover{ opacity: 0.85; }
+
+    .cta{ margin-top: 0.8rem; }
+
+    footer{
+      margin-top: 1.2rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid var(--gold);
     }
-    .cta a:hover { opacity:.85 }
-    footer {
-      margin-top:1.5rem;
-      padding-top:.8rem;
-      border-top:1px solid var(--gold);
+    footer p{
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin: 0;
     }
-    footer p {
-      font-size:.7rem;
-      color:var(--muted);
-      margin:0;
-    }
-    footer a {
-      color:var(--ink);
-      text-decoration:none;
-      border-bottom:1px solid var(--gold);
-      padding-bottom:1px;
-    }
-    footer a:hover { opacity:.85; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Media Scale & Distribution Consulting Group</h1>
+
     <p class="lead">
       MSDCG scales media businesses through proven growth and distribution strategies refined at the companies driving today’s creator economy.
     </p>
@@ -102,7 +112,7 @@
 
     <h2>Principal</h2>
     <p class="lead">
-      Karo Chakhlasyan — former Amazon Senior Product Manager for Wondery, Chartable COO, and Wondery VP of Audience Acquisition.
+      Karo Chakhlasyan, former Amazon Senior Product Manager for Wondery, Chartable COO, and Wondery VP of Audience Acquisition.
     </p>
 
     <p class="cta">
@@ -110,7 +120,7 @@
     </p>
 
     <footer>
-      <p>Contact, <a href="mailto:info@msdc.group">info@msdc.group</a></p>
+      <p>Contact, <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
     </footer>
   </div>
 </body>
