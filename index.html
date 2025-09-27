@@ -1,89 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MSDC Group</title>
-
+  <meta name="description" content="MSDCG is a boutique partner for media companies, creators, and platforms. Select clients, clear outcomes, precise execution." />
   <style>
     :root{
-      --bluegray:#243447;   /* refined deep blue-gray */
-      --ivory:#fcfbf9;      /* lighter background */
-      --muted:#4a4a4a;      /* soft gray for footer text */
-      --gold:#b89b72;       /* muted gold accent */
+      --ink:#243447;      /* blue-gray */
+      --paper:#fcfbf9;    /* ivory */
+      --gold:#b89b72;     /* muted gold */
+      --muted:#666666;    /* soft gray */
     }
-
-    body {
-      margin: 0;
+    html,body{height:100%}
+    body{
+      margin:0;
       font-family: Georgia, serif;
-      background-color: var(--ivory);
-      color: var(--bluegray);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 1.5rem;
+      background:var(--paper);
+      color:var(--ink);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      text-align:center;
+      padding:20px;
     }
-
-    .wrap {
-      max-width: 640px;
-      width: 100%;
+    .wrap{max-width:640px;width:100%}
+    h1{
+      font-size:1.45rem;
+      line-height:1.15;
+      margin:0 0 .9rem 0;
+      letter-spacing:0;
     }
-
-    h1 {
-      font-family: Georgia, serif;
-      font-weight: bold;
-      font-size: 1.6rem;
-      line-height: 1.2;
-      margin: 0 0 1rem 0;
-      color: var(--bluegray);
+    p.lead{
+      font-size:.9rem;
+      line-height:1.45;
+      margin:0 0 .9rem 0;
     }
-
-    p.intro {
-      font-size: 0.9rem;
-      line-height: 1.45;
-      margin: 0 0.5rem;
-      opacity: 0;
-      transform: translateY(8px);
-      animation: fadeInUp 1s ease forwards;
-      animation-delay: 0.2s;
+    .cta{
+      margin-top:.25rem;
     }
-    p.subtle {
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 1rem;
-  font-style: italic;
-}
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
+    a{
+      color:var(--ink);
+      text-decoration:none;
+      border-bottom:1px solid var(--gold);
+      padding-bottom:2px;
     }
-
-    footer {
-      margin-top: 1.5rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--gold); /* gold accent line */
-      width: 100%;
-      text-align: center;
+    a:hover{opacity:.85}
+    footer{
+      margin-top:1.2rem;
+      padding-top:.7rem;
+      border-top:1px solid var(--gold);
     }
-
-    footer .contact {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin: 0;
+    footer p{
+      font-size:.75rem;
+      color:var(--muted);
+      margin:0;
     }
-
-    footer .contact a {
-      color: var(--bluegray);
-      text-decoration: none;
-    }
-
-    footer .contact a:hover {
-      color: var(--gold); /* gold hover for elegance */
-      text-decoration: none;
+    @media (min-width:768px){
+      h1{font-size:1.6rem}
+      p.lead{font-size:.92rem}
     }
   </style>
 </head>
@@ -91,18 +67,18 @@
   <div class="wrap">
     <h1>Media Scale & Distribution Consulting Group</h1>
 
-    <p class="intro">
+    <p class="lead">
       MSDCG is a boutique partner for media companies, creators, and platforms.
-      We take on only a select few clients, delivering clarity, scale, and execution.
-      From audience growth to distribution and revenue, we transform emerging formats
-      into enduring, multi-million-user businesses.
+      We work with a select few clients, we deliver clarity, scale, and execution.
+      From audience growth to distribution and revenue, we transform emerging formats into enduring, multi-million-user businesses.
     </p>
-    <p class="subtle">
-  Backed by a track record of scaling global media platforms and creator businesses.
-</p>
+
+    <p class="cta">
+      <a href="approach.html" aria-label="Read about our approach">Approach →</a>
+    </p>
 
     <footer>
-      <p class="contact">Contact: <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
+      <p>Contact, <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
     </footer>
   </div>
 </body>
