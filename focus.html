@@ -3,134 +3,118 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MSDC Group – Focus & Method</title>
-  <meta name="description" content="MSDCG: boutique focus on audience, distribution, and revenue. Method: outcome-first, narrative alignment, execution as the goal, scale as the measure of success." />
+  <title>Focus & Method – MSDC Group</title>
+  <meta name="description" content="MSDCG Focus and Method – Audience Scale, Distribution Advantage, Revenue Innovation, and hands-on execution." />
   <style>
     :root{
       --ink:#243447;
       --paper:#fcfbf9;
       --gold:#b89b72;
       --muted:#666666;
+      --maxw:900px;
     }
+
     body{
       margin:0;
-      font-family: Georgia, serif;
       background:var(--paper);
       color:var(--ink);
-      padding:24px;
-      line-height:1.45;
-    }
-    .wrap{max-width:720px;margin:0 auto}
-    .topnav{
-      font-size:.7rem;
-      margin:0 0 .5rem 0;
-    }
-    .topnav a{
-      color:var(--ink);
-      text-decoration:none;
-      border-bottom:1px solid var(--gold);
-      padding-bottom:1px;
-    }
-    h1{
-      font-size:1.2rem;
-      margin:.25rem 0 .6rem 0;
-      text-align:center;
-    }
-    section{
-      margin-top:1.2rem;
-      padding-top:.8rem;
-      border-top:1px solid var(--gold);
-    }
-    h2{
+      font-family: Georgia, serif;
       font-size:0.9rem;
-      margin:0 0 .6rem 0;
-      text-align:center;
-    }
-    .pillars{
+      line-height:1.4;
       display:flex;
-      flex-direction:column;
+      align-items:flex-start;
+      justify-content:center;
+      padding:32px 20px 24px;
+    }
+
+    .wrap{width:100%; max-width:var(--maxw)}
+
+    h1{
+      text-align:center;
+      font-size:1.1rem;
+      font-weight:bold;
+      margin:0 0 1.2rem 0;
+    }
+
+    h2{
+      font-size:0.88rem;
+      font-weight:bold;
+      margin:1.5rem 0 0.8rem 0;
+      text-align:left;
+    }
+
+    h3{
+      font-size:0.82rem;
+      font-weight:bold;
+      margin:0 0 0.3rem 0;
+    }
+
+    p{margin:0 0 0.8rem 0; font-size:0.82rem; line-height:1.35}
+
+    /* Focus section as three columns */
+    .columns{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap:1.2rem;
-      margin:0 auto;
-      max-width:680px;
+      margin-bottom:1.5rem;
     }
-    .pillar h3{
-      font-size:.85rem;
-      margin:0 0 .2rem 0;
-      text-align:center;
-    }
-    .pillar p{
-      font-size:.78rem;
-      color:var(--muted);
-      margin:.1rem auto 0 auto;
-      max-width:500px;
-      text-align:center;
-      line-height:1.35;
-    }
-    .method p{
-      font-size:.8rem;
-      color:var(--muted);
-      margin:0.25rem auto 0 auto;
-      text-align:center;
-      max-width:580px;
-      line-height:1.35;
-    }
-    footer{
-      margin-top:1.2rem;
-      padding-top:.8rem;
-      border-top:1px solid var(--gold);
-      text-align:center;
-      font-size:.7rem;
-      color:var(--muted);
-    }
-    footer a{
+
+    .pillar{padding:0}
+
+    a{
       color:var(--ink);
       text-decoration:none;
       border-bottom:1px solid var(--gold);
       padding-bottom:1px;
     }
-    @media (min-width:768px){
-      h1{font-size:1.3rem}
-      .pillars{flex-direction:row;justify-content:space-between}
-      .pillar{flex:1;padding:0 .5rem}
-      .pillar p{max-width:220px}
+    a:hover{opacity:.85}
+
+    footer{
+      margin-top:1.5rem;
+      padding-top:.7rem;
+      border-top:1px solid var(--gold);
+      text-align:center;
     }
+    footer p{font-size:.72rem; color:var(--muted); margin:0}
+    footer a{color:var(--ink); border-bottom:1px solid var(--gold); padding-bottom:1px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <p class="topnav"><a href="index.html" aria-label="Back to MSDCG">MSDCG</a></p>
-
     <h1>Focus & Method</h1>
 
-    <section>
-      <h2>Focus</h2>
-      <div class="pillars">
-        <div class="pillar">
-          <h3>Audience Scale</h3>
-          <p>Expand reach across formats and platforms, turning micro-moments into lasting engagement.</p>
-        </div>
-        <div class="pillar">
-          <h3>Distribution Advantage</h3>
-          <p>Engineer how content travels — RSS, VOD, FAST, YouTube — compounding discovery with the right mix.</p>
-        </div>
-        <div class="pillar">
-          <h3>Revenue Innovation</h3>
-          <p>Diversify and optimize monetization, mapping every step back to enduring enterprise value.</p>
-        </div>
+    <h2>Focus</h2>
+    <div class="columns">
+      <div class="pillar">
+        <h3>Audience Scale</h3>
+        <p>Expand reach across formats and platforms, turning micro-moments into lasting engagement.</p>
       </div>
-    </section>
+      <div class="pillar">
+        <h3>Distribution Advantage</h3>
+        <p>Engineer how content travels - RSS, VOD, FAST, YouTube - compounding discovery with the right mix.</p>
+      </div>
+      <div class="pillar">
+        <h3>Revenue Innovation</h3>
+        <p>Diversify and optimize monetization, mapping every step back to enduring enterprise value.</p>
+      </div>
+    </div>
 
-    <section class="method">
-      <h2>Method</h2>
-      <p>
-        We start with a conversation to confirm fit. The best partnerships come through referral. 
-        From there, we work backward from the outcome, capturing strategy in a written narrative and shaping it into the format easiest to digest — always with execution as the goal and scale as the measure of success.
-      </p>
-    </section>
+    <h2>Method</h2>
+    <div>
+      <h3>Outcome Alignment & Strategy</h3>
+      <p>Define specific growth targets and constraints, then develop a written narrative with clear recommendations to achieve those outcomes.</p>
+
+      <h3>Tailored Implementation Plan</h3>
+      <p>Create detailed execution steps for audience growth, platform optimization, and revenue expansion designed specifically for your business and goals.</p>
+
+      <h3>Active Execution Support</h3>
+      <p>Work alongside you to implement strategies, measure progress against agreed outcomes, and adjust tactics based on real results.</p>
+    </div>
+
+    <p style="margin-top:1.2rem"><a href="index.html">← Back to MSDCG</a></p>
 
     <footer>
-      <p><a href="index.html">←MSDCG</a></p>
-      <p>Contact: <a href="mailto:info@msdc.group">info@msdc.group</a></p>
+      <p>Contact, <a href="mailto:karo@msdc.group">karo@msdc.group</a></p>
     </footer>
   </div>
 </body>
