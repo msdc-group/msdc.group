@@ -58,6 +58,15 @@
       color:var(--muted);
       margin:0;
     }
+    footer a {
+      color: var(--ink);                 /* overrides default bright blue */
+      text-decoration: none;             /* removes default underline */
+      border-bottom: 1px solid var(--gold); /* subtle gold underline */
+      padding-bottom: 1px;
+    }
+    footer a:hover {
+      opacity: 0.85;
+    }
     @media (min-width:768px){
       h1{font-size:1.6rem}
       p.lead{font-size:.92rem}
@@ -70,7 +79,7 @@
 
     <p class="lead">
       MSDCG is a boutique partner for media companies, creators, and platforms.
-     We work with a select few clients, delivering clarity, scale, and execution.
+      We work with a select few clients, delivering clarity, scale, and execution.
       From audience growth to distribution and revenue, we transform emerging formats into enduring, multi-million-user businesses.
     </p>
 
